@@ -8,6 +8,7 @@ cscope.*
 
 # Ignore build directory
 build/
+deploy/
 
 # Ignore build products from tools
 tools/**/*.o
