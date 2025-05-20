@@ -24,27 +24,27 @@ TF_A_EXTRA_OPTFLAGS ?=
 TF_A_METADATA_JSON ?= $(SRC_PATH)/plat/st/common/default_metadata.json
 
 # Init default config settings
-TF_A_DEVICETREE_optee ?=   stm32mp135d-ici stm32mp131d-ici
+TF_A_DEVICETREE_optee ?=   stm32mp135d-ici stm32mp131d-ici stm32mp131d-ici-256M
 TF_A_EXTRA_OPTFLAGS_optee ?= AARCH32_SP=optee
 TF_A_BINARY_optee ?= tf-a
 TF_A_MAKE_TARGET_optee ?= dtbs
 # Init default config settings
-TF_A_DEVICETREE_emmc ?=   stm32mp135d-ici stm32mp131d-ici
+TF_A_DEVICETREE_emmc ?=   stm32mp135d-ici stm32mp131d-ici stm32mp131d-ici-256M
 TF_A_EXTRA_OPTFLAGS_emmc ?= STM32MP_EMMC=1 PSA_FWU_SUPPORT=1
 TF_A_BINARY_emmc ?= tf-a
 TF_A_MAKE_TARGET_emmc ?= all
 # Init default config settings
-TF_A_DEVICETREE_sdcard ?=   stm32mp135d-ici stm32mp131d-ici
+TF_A_DEVICETREE_sdcard ?=   stm32mp135d-ici stm32mp131d-ici stm32mp131d-ici-256M
 TF_A_EXTRA_OPTFLAGS_sdcard ?= STM32MP_SDMMC=1 PSA_FWU_SUPPORT=1
 TF_A_BINARY_sdcard ?= tf-a
 TF_A_MAKE_TARGET_sdcard ?= all
 # Init default config settings
-TF_A_DEVICETREE_uart ?=   stm32mp135d-ici stm32mp131d-ici
+TF_A_DEVICETREE_uart ?=   stm32mp135d-ici stm32mp131d-ici stm32mp131d-ici-256M
 TF_A_EXTRA_OPTFLAGS_uart ?= STM32MP_UART_PROGRAMMER=1
 TF_A_BINARY_uart ?= tf-a
 TF_A_MAKE_TARGET_uart ?= all
 # Init default config settings
-TF_A_DEVICETREE_usb ?=   stm32mp135d-ici stm32mp131d-ici
+TF_A_DEVICETREE_usb ?=   stm32mp135d-ici stm32mp131d-ici stm32mp131d-ici-256M
 TF_A_EXTRA_OPTFLAGS_usb ?= STM32MP_USB_PROGRAMMER=1
 TF_A_BINARY_usb ?= tf-a
 TF_A_MAKE_TARGET_usb ?= all
